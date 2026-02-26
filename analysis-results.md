@@ -1,8 +1,11 @@
-Weekly Ghana Research Analysis
-Date: [Monday date]
+# Weekly Ghana Research Analysis
 
-Urgent Follow-Up Items
-[Agent's list of urgent items]
+**Generated:** Aug 20, 2019 at 04:00:14 PM
 
-Recommendations
-[Agent's recommendations]
+## Analysis Results
+
+
+
+## Next Steps
+
+Refer to the analysis above for actionable recommendations.
