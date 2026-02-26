@@ -1,3 +1,8 @@
-# Primary Data Ghana - Weekly Analysis Report
+Weekly Ghana Research Analysis
+Date: [Monday date]
 
-*Analysis results will be generated here by the automated agent every Monday morning at 7:00 AM CT.*
+Urgent Follow-Up Items
+[Agent's list of urgent items]
+
+Recommendations
+[Agent's recommendations]
