@@ -111,8 +111,8 @@
             padding: 12px;
             background: var(--color-persona-bg);
             border-radius: 8px;
-            border-left: 3px solid var(--color-icon-accent);
             border: 1px solid var(--color-persona-border);
+            border-left: 3px solid var(--color-icon-accent);
         }
         
         .metadata-item strong {
@@ -164,21 +164,21 @@
         }
         
         .alert-critical {
-            background-color: rgba(220, 53, 69, 0.08);
-            border-color: #dc3545;
-            color: #721c24;
+            background: linear-gradient(135deg, rgba(220, 53, 69, 0.15) 0%, rgba(192, 38, 55, 0.12) 100%);
+            border-color: #ff5a6a;
+            color: #ffaaaa;
         }
         
         .alert-high {
-            background-color: rgba(255, 193, 7, 0.08);
-            border-color: #ffc107;
-            color: #856404;
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.14) 0%, rgba(255, 160, 22, 0.11) 100%);
+            border-color: #ffb84d;
+            color: #ffd699;
         }
         
         .alert-medium {
-            background-color: rgba(23, 162, 184, 0.08);
-            border-color: #17a2b8;
-            color: #0c5460;
+            background: linear-gradient(135deg, rgba(31, 166, 163, 0.14) 0%, rgba(22, 124, 136, 0.11) 100%);
+            border-color: #4dccc5;
+            color: #8fefea;
         }
         
         .key-metrics {
@@ -270,23 +270,23 @@
         }
         
         .warning-badge {
-            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
-            color: white;
+            background: linear-gradient(135deg, #ffb84d 0%, #ff9c1a 100%);
+            color: #1a1a1a;
             padding: 6px 12px;
             border-radius: 6px;
             font-size: 0.85em;
             font-weight: 600;
-            box-shadow: 0 2px 4px rgba(255, 152, 0, 0.2);
+            box-shadow: 0 2px 8px rgba(255, 152, 74, 0.28);
             white-space: nowrap;
         }
         
         .pattern-section {
-            background: linear-gradient(135deg, rgba(23, 53, 77, 0.82) 0%, rgba(18, 47, 69, 0.82) 100%);
+            background: linear-gradient(135deg, rgba(31, 166, 163, 0.1) 0%, rgba(23, 53, 77, 0.8) 100%);
             padding: 16px;
             border-radius: 8px;
             margin-bottom: 15px;
-            border-left: 4px solid var(--color-icon-accent);
             border: 1px solid var(--color-card-border);
+            border-left: 4px solid var(--color-icon-accent);
         }
         
         .pattern-section strong {
@@ -295,10 +295,12 @@
         }
         
         .action-items {
-            background: linear-gradient(135deg, #e0f2f1 0%, #b2dfdb 100%);
+            background: linear-gradient(135deg, rgba(31, 166, 163, 0.14) 0%, rgba(22, 124, 136, 0.11) 100%);
             padding: 20px;
             border-radius: 8px;
-            border-left: 4px solid #009688;
+            border-left: 4px solid var(--color-icon-accent);
+            border: 1px solid var(--color-card-border);
+            color: var(--color-body);
         }
         
         .priority-section {
@@ -318,18 +320,21 @@
         }
         
         .priority-1 {
-            background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+            background: linear-gradient(135deg, #ff5a6a 0%, #ff3d50 100%);
             color: white;
+            box-shadow: 0 4px 12px rgba(255, 58, 104, 0.32);
         }
         
         .priority-2 {
-            background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
-            color: white;
+            background: linear-gradient(135deg, #ffb84d 0%, #ff9c1a 100%);
+            color: #1a1a1a;
+            box-shadow: 0 4px 12px rgba(255, 152, 74, 0.24);
         }
         
         .priority-3 {
-            background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+            background: linear-gradient(135deg, #1fa6a3 0%, #167c88 100%);
             color: white;
+            box-shadow: 0 4px 12px rgba(31, 166, 163, 0.28);
         }
         
         footer {
@@ -409,7 +414,7 @@
     <div class="container">
         <!-- Metadata Section -->
         <div class="metadata">
-            <h3 style="margin-top: 0; color: #8fd3f4;">Report Information</h3>
+            <h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3>
             <div class="metadata-grid">
                 <div class="metadata-item">
                     <strong>Report Generated:</strong><br>
