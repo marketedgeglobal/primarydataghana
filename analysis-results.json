@@ -1,203 +1,93 @@
 {
-  "title": "Weekly Ghana T&G Knowledge Synthesis",
-  "timestamp": "2026-03-06T20:00:00Z",
-  "quality": [
-    {
-      "finding": "Expatriate-led quality systems mask structural workforce readiness gap in middle management",
-      "overview": "Ghana's factory-floor workforce is trainable and English-speaking, but middle management and technical supervisory roles (supervisors, mechanics, QA) remain bottlenecks. Dignity DTRT and UNI-JAY both employ expatriate quality staff (Indian, Bangladeshi, Philippine nationals) to bridge this gap. GIPC confirms skills 'have never been a big issue' for entry-level roles, but gaps exist in supervisory tiers. This creates dependency on expatriate expertise and limits scalability of new entrants. The mechanism is institutional: CTVET competency-based training (Certificates/Proficiency 1-2) is too shallow and misaligned to factory needs; manufacturers like DTRT must retrain recruits for months. Commercial implication: new operators face 6-12 month ramp-up costs for supervisory hiring and training; expatriate salary premiums compress margins. Decision implication: park design must include on-site training facilities and partnerships with KNUST or capable private institutions (AGI proposed shared center of excellence with specialized equipment). Oxygen City workforce pipeline looks credible on paper but lacks T&G-specific technical design.",
-      "evidence": "Dignity DTRT: 'automation reduces dependence on scarce skilled labor.' UNI-JAY Kumasi: 4 expatriates (2 production, 1 mechanic, 1 quality) employed. GIPC: 'Skills have never been a big issue' but 'gaps exist in middle management and technical supervisory levels.' AGI: 'CTVET competency-based training too shallow; manufacturers must retrain recruits for months.'",
-      "mechanism": "Institutional training misalignment + expatriate dependency creates scalability constraint. CTVET design does not match factory floor requirements; private sector must absorb retraining costs.",
-      "commercialImplication": "New operators face 6-12 month supervisory ramp-up; expatriate salary premiums (20-40% above local rates) compress margins. Dignity DTRT's ~USD 1M automation investment partly driven by labor scarcity mitigation.",
-      "decisionImplication": "Park design must include on-site training facilities with real equipment (not classroom-only). Government should co-fund training center wages for 2-3 years (Benin model). Prioritize partnerships with KNUST and AGI's proposed shared center of excellence. Oxygen City must complete T&G-specific technical design before land servicing begins."
+  "full_analysis": {
+    "title": "Weekly Ghana T&G Knowledge Synthesis",
+    "timestamp": "2026-03-06T23:00:00.000Z",
+    "_metadata": {
+      "dataSource": "Primary Data Input Form - Ghana (Responses)",
+      "respondentCount": 12,
+      "collectionDateRange": "2026-02-24 13:54:23 to 2026-03-02 11:13:58"
     },
-    {
-      "finding": "Export certification costs create individual firm barrier; pooled certification model needed",
-      "overview": "UNI-JAY Accra reports export certifications (SMETA, COS, OCTEC) are 'quite expensive' for individual firms and require 15 months to achieve 'six options.' This creates a gating item for export market entry. Northshore and Dignity DTRT have absorbed these costs, but smaller operators cannot. The mechanism is information asymmetry and scale: certification bodies charge per-firm fees; individual firms lack leverage to negotiate. Commercial implication: firms delay export entry 12-18 months while accumulating certification costs; smaller operators (UNI-JAY Accra, UNI-JAY Kumasi) remain domestic-focused longer. Decision implication: government should establish pooled certification support (co-fund fees for 5-6 firms per cohort) or negotiate group rates with certification bodies. Park operator could bundle certification support as tenant service.",
-      "evidence": "UNI-JAY Accra: 'Export certifications quite expensive; asking for government help with fees and expertise for five, six companies.' Certification timeline: 15 months total. Northshore and Dignity DTRT have absorbed costs independently.",
-      "mechanism": "Per-firm certification fees create fixed cost barrier; smaller operators cannot justify individual investment. Pooled model reduces per-firm cost and accelerates export entry.",
-      "commercialImplication": "Certification delay = 12-18 month export market entry lag. Pooled support could reduce per-firm cost by 60-70% and accelerate 5-6 firms to export readiness simultaneously.",
-      "decisionImplication": "Government should establish pooled certification support program (co-fund fees for cohorts of 5-6 firms). Park operator could bundle certification support as tenant service. Prioritize SMETA and COS (US/EU buyer requirements)."
-    },
-    {
-      "finding": "Disability inclusion and worker transport are emerging quality/retention drivers",
-      "overview": "UNI-JAY Accra employs persons with disabilities and treats them 'like everyone else' with equal pay and non-discrimination. Worker transport is critical for punctuality and retention; UNI-JAY currently provides buses but needs more. This reflects emerging competitive advantage in workforce stability and social compliance. The mechanism is operational: reliable transport reduces absenteeism and turnover; disability inclusion meets buyer compliance requirements (SMETA, COS). Commercial implication: firms with strong transport and inclusion programs report lower turnover and higher buyer satisfaction. Decision implication: park design should include transport hub and accessibility infrastructure. Government could co-fund transport support (bus and driver) for firms hiring 100+ disability workers.",
-      "evidence": "UNI-JAY Accra: 'Employ persons with disabilities; treat them like everyone else.' 'Currently provide buses but need more.' 'Public transport prohibitively expensive.' Linked to 24-hour operations and worker retention.",
-      "mechanism": "Transport reliability reduces absenteeism; disability inclusion meets buyer compliance. Both drive workforce stability and buyer satisfaction.",
-      "commercialImplication": "Firms with strong transport and inclusion programs report lower turnover (estimated 15-20% reduction). Disability inclusion meets SMETA/COS buyer requirements.",
-      "decisionImplication": "Park design should include transport hub and accessibility infrastructure. Government could co-fund transport support for firms hiring 100+ disability workers. Prioritize in park operating model."
-    }
-  ],
-  "cost": [
-    {
-      "finding": "Electricity cost gap ($0.12 vs $0.05 target) is existential constraint; textile viability depends on closing it",
-      "overview": "Current electricity cost is ~$0.12/kWh; Ghana's textile policy targets $0.05/kWh. Comparators: Togo $0.08-0.09/kWh; East Africa as low as $0.03/kWh. ARISE states 'textile projects not commercially viable without sustained government support to close energy cost gap.' Akosombo shifted from RFO-based boilers to biomass (coconut husks, palm kernel, rice husks, cocoa husks) to reduce operating costs. Northshore absorbed infrastructure costs (electricity to site, land reclamation, internal roads, training facilities) and government road costing $27M remains unfunded. The mechanism is structural: textiles are energy-intensive (steam generation ~85% of processes at Akosombo); high electricity costs compress margins below Asia benchmarks. Commercial implication: at $0.12/kWh, integrated textile projects cannot compete with Vietnam ($0.08-0.10/kWh) or Bangladesh ($0.06-0.08/kWh). Viability threshold: Ghana must achieve $0.07-0.08/kWh to attract greenfield textile investment. Decision implication: government must prioritize electricity cost reduction as precondition for textile park viability. Options: (1) direct subsidy to park operators for 3-5 years; (2) renewable energy co-investment (solar, biomass); (3) preferential tariff for industrial parks. Without this, textile investment will remain garment-focused (lower energy intensity).",
-      "evidence": "ARISE: 'Energy economics drive viability. Textile projects not commercially viable without sustained government support to close energy cost gap.' Current $0.12/kWh vs policy target $0.05/kWh. Akosombo: 'Steam generation ~85% of processes.' Northshore: absorbed infrastructure costs; government road $27M unfunded.",
-      "mechanism": "Textiles energy-intensive; high electricity costs compress margins below Asia benchmarks. Viability threshold: $0.07-0.08/kWh needed to compete.",
-      "commercialImplication": "At $0.12/kWh, integrated textile projects cannot compete with Vietnam or Bangladesh. Viability gap: $0.04-0.05/kWh = 30-40% margin compression.",
-      "decisionImplication": "Government must prioritize electricity cost reduction as precondition for textile park viability. Options: (1) direct subsidy to park operators for 3-5 years; (2) renewable energy co-investment; (3) preferential tariff for industrial parks. Without this, textile investment will remain garment-focused."
-    },
-    {
-      "finding": "Working capital constraint is binding; government payment delays (90-180 days) undermine operator viability",
-      "overview": "UNI-JAY Accra, Akosombo, and others cite working capital as binding constraint. Government payment delays are critical: UNI-JAY states ideally 21-30 days, 45 at most, but 90-180 days 'difficult.' Akosombo notes 'working capital constraint limits capacity utilization' despite substantial market demand. The mechanism is cash flow: government procurement (uniforms for police, army, schools) provides steady demand but delayed payment forces operators to finance inventory and production costs out-of-pocket. Commercial implication: delayed government payments force operators to borrow at 12-15% interest rates, compressing margins by 2-4 percentage points. Operators reduce production runs and capacity utilization to minimize working capital exposure. Decision implication: government must establish 30-day payment terms for all procurement contracts. Park operator could offer supply-chain financing (factoring) to tenants to bridge payment delays.",
-      "evidence": "UNI-JAY Accra: 'Government payment takes too long. Ideally 21-30 days; 45 at most; 90-180 days difficult.' Akosombo: 'Working capital constraint limits capacity utilization despite substantial market demand.' Interest rates 12-15% cited as 'reasonable' for viability; above 15% creates 'severe challenges.'",
-      "mechanism": "Government payment delays force operators to finance inventory and production costs out-of-pocket. Operators borrow at 12-15% to bridge gaps, compressing margins.",
-      "commercialImplication": "Delayed government payments force 2-4 percentage point margin compression. Operators reduce production runs and capacity utilization to minimize working capital exposure.",
-      "decisionImplication": "Government must establish 30-day payment terms for all procurement contracts. Park operator could offer supply-chain financing (factoring) to tenants. Prioritize in park operating model and government procurement policy."
-    },
-    {
-      "finding": "Customs fee fragmentation and VAT treatment create avoidable cost penalties",
-      "overview": "Dignity DTRT reports 'fragmented customs fee structure raises input costs' (multiple bills of entry charged separately, unlike Sri Lanka). AGI notes 'import dependence keeps input costs structurally high' and 'exporters can only take portion of proceeds out for re-importing inputs (5% retention controls).' UNI-JAY Accra references 'duties' as constraint to exports. The mechanism is policy design: Ghana charges multiple bills of entry separately; Sri Lanka uses single master bill. FX retention controls limit operator ability to re-import inputs. Commercial implication: fragmented customs fees add 2-3% to input costs; FX retention controls force operators to source inputs at premium prices or delay production. Decision implication: government should consolidate customs billing into single master bill (align with Sri Lanka model). Establish preferential 'green channel' for export inputs (Dignity DTRT requested but not implemented). Increase FX retention allowance for exporters to 15-20% (from current 5%).",
-      "evidence": "Dignity DTRT: 'Fragmented customs fee structure raises input costs (multiple bills of entry charged separately, unlike Sri Lanka).' AGI: 'Exporters can only take portion of proceeds out for re-importing inputs (5% retention controls).' UNI-JAY Accra: 'Duties' cited as constraint.",
-      "mechanism": "Fragmented customs billing and FX retention controls create policy-driven cost penalties. Single master bill and higher FX retention would reduce input costs by 2-3%.",
-      "commercialImplication": "Fragmented customs fees add 2-3% to input costs. FX retention controls force premium sourcing or production delays.",
-      "decisionImplication": "Consolidate customs billing into single master bill. Establish preferential 'green channel' for export inputs. Increase FX retention allowance to 15-20%."
-    },
-    {
-      "finding": "Interest rate threshold (15%+) blocks textile investment; concessional financing needed for ramp-up",
-      "overview": "Akosombo notes 12-10% borrowing rates 'reasonable' for viability; above 15% creates 'severe challenges.' ARISE's hypothetical project economics assume 30% equity (~$150M for $500M project) with remainder debt-funded. Benin model: government equity participation 35%; two years government-funded training center wages; government repayment for $40M gas pipeline connection. The mechanism is project economics: textile projects are loss-making for first 3-5 years; high interest rates accelerate cash burn and reduce viability. Commercial implication: at 15%+ interest, textile projects become unviable; operators cannot service debt during ramp-up. Decision implication: government should establish concessional financing facility (8-10% interest) for textile park tenants during 3-5 year ramp-up. Alternatively, government equity co-investment (Benin model) reduces debt burden and lowers required returns.",
-      "evidence": "Akosombo: '12% and potentially 10% borrowing rates called reasonable for viability. Above 15% creates severe challenges.' ARISE: 'Ramp-up requires multi-year subsidy or co-investment.' Benin model: 35% government equity; 2 years government-funded training; $40M gas pipeline repayment.",
-      "mechanism": "Textile projects loss-making for 3-5 years; high interest rates accelerate cash burn. Concessional financing or government equity reduces debt burden.",
-      "commercialImplication": "At 15%+ interest, textile projects become unviable. Concessional financing (8-10%) or government equity co-investment needed for viability.",
-      "decisionImplication": "Establish concessional financing facility (8-10% interest) for textile park tenants during 3-5 year ramp-up. Alternatively, government equity co-investment (Benin model) reduces debt burden."
-    }
-  ],
-  "market": [
-    {
-      "finding": "Domestic textile demand (~100M yards/year) is 2/3 smuggled/under-taxed; tax stamps enforcement could unlock 30M yards for compliant producers",
-      "overview": "Akosombo reports domestic textile demand ~100 million yards/year; local manufacturers supply ~1/3; remainder enters via smuggling and under-taxed channels. Government anti-smuggling measure: tax stamps on tax-paid textiles; enforcement agencies seize products without stamps. This creates price segmentation: cheap polyester prints (smuggled) vs higher-quality local product. The mechanism is enforcement: tax stamps are policy tool but enforcement is inconsistent. Commercial implication: if enforcement strengthens, compliant local producers could capture 30M additional yards (30% market expansion). Akosombo and other textile producers would operate near capacity. Decision implication: government should accelerate tax stamp enforcement and communicate timeline to investors. This is low-cost market expansion for existing operators and attracts new textile investment. Park design should assume 30M yard market expansion from enforcement.",
-      "evidence": "Akosombo: 'Domestic demand ~100 million yards/year; local manufacturers supply ~1/3. Remainder enters via smuggling and under-taxed channels.' 'Government anti-smuggling measure: tax stamps on tax-paid textiles; enforcement agencies seize products without stamps.' Price segmentation: cheap polyester prints vs higher-quality local product.",
-      "mechanism": "Tax stamp enforcement is policy tool; inconsistent enforcement allows smuggling. Stronger enforcement redirects 30M yards to compliant producers.",
-      "commercialImplication": "If enforcement strengthens, compliant local producers could capture 30M additional yards (30% market expansion). Akosombo and other textile producers would operate near capacity.",
-      "decisionImplication": "Government should accelerate tax stamp enforcement and communicate timeline to investors. Park design should assume 30M yard market expansion from enforcement."
-    },
-    {
-      "finding": "AGOA 12-month certainty window is weak; Egypt and Jordan offer longer-term US access, shifting buyer confidence",
-      "overview": "AGOA provides US market access but only 12-month certainty window. Northshore notes 'AGOA uncertainty undermines buyer confidence' and 'trade regime offers only 12-month window; fails to give predictable comfort for supply chain shifts.' Comparators (Egypt, Jordan) offer longer-term certainty for US access outside AGOA. ARISE states 'export market logic: AGOA offers volume but weak predictability. Shifts interest to countries with more predictable access (Egypt, Jordan).' The mechanism is buyer risk: 12-month window creates uncertainty for multi-year supply commitments. Commercial implication: buyers hesitate to shift orders to Ghana if AGOA renewal is uncertain. Dignity DTRT moved from 1 client (7 years) to 6 clients, but AGOA uncertainty limits further expansion. Decision implication: government should pursue AGOA renewal and communicate multi-year certainty to buyers. Alternatively, pursue bilateral trade agreements with US (similar to Egypt, Jordan) to provide longer-term certainty. Park marketing should emphasize AGOA + bilateral pathway.",
-      "evidence": "Northshore: 'AGOA uncertainty undermines buyer confidence. Trade regime offers only 12-month window; fails to give predictable comfort for supply chain shifts.' ARISE: 'AGOA offers volume but weak predictability. Shifts interest to countries with more predictable access (Egypt, Jordan).' Dignity DTRT: moved from 1 client to 6 clients but AGOA uncertainty limits further expansion.",
-      "mechanism": "12-month AGOA window creates buyer uncertainty for multi-year supply commitments. Longer-term certainty (Egypt, Jordan model) attracts buyer confidence.",
-      "commercialImplication": "AGOA uncertainty limits buyer confidence and supply chain shifts. Longer-term certainty could unlock 2-3 additional buyer commitments per operator.",
-      "decisionImplication": "Government should pursue AGOA renewal and communicate multi-year certainty to buyers. Pursue bilateral trade agreements with US (Egypt, Jordan model). Park marketing should emphasize AGOA + bilateral pathway."
-    },
-    {
-      "finding": "Regional sourcing shift to Benin cotton is accelerating; Ghana should formalize Benin supply partnerships",
-      "overview": "Dignity DTRT reports 'regional sourcing shift: now sourcing from Benin due to compliance constraints and customer restrictions on Chinese cotton.' GIZ notes 'regional cotton sourcing (Benin, Burkina Faso) offers near-term upstream pathway' and 'Benin cotton is certified, supporting early textile inputs.' The mechanism is buyer compliance: US/EU buyers restrict Chinese cotton (Xinjiang concerns); Benin cotton is certified and compliant. Commercial implication: Benin cotton sourcing is viable near-term pathway; Ghana should formalize supply partnerships to ensure reliable access. Decision implication: government should establish formal cotton supply agreements with Benin (government-to-government) to secure reliable access. Park design should assume Benin cotton as primary input source for first 3-5 years. Domestic cotton revival is longer-term (5-year horizon per GIZ).",
-      "evidence": "Dignity DTRT: 'Regional sourcing shift: now sourcing from Benin due to compliance constraints and customer restrictions on Chinese cotton.' GIZ: 'Regional cotton sourcing (Benin, Burkina Faso) offers near-term upstream pathway. Benin cotton is certified, supporting early textile inputs.'",
-      "mechanism": "US/EU buyer compliance restricts Chinese cotton. Benin cotton is certified and compliant. Regional supply partnerships ensure reliable access.",
-      "commercialImplication": "Benin cotton sourcing is viable near-term pathway. Formalized supply agreements reduce sourcing uncertainty and input cost volatility.",
-      "decisionImplication": "Government should establish formal cotton supply agreements with Benin (government-to-government). Park design should assume Benin cotton as primary input source for first 3-5 years."
-    },
-    {
-      "finding": "Garment export base is thin; only 3-4 actors export larger volumes; market consolidation risk",
-      "overview": "AGI reports 'garment export base thin beyond few players' and 'three or four actors export larger volumes.' Most garment exports in small quantities, often tied to trade shows. Dignity DTRT (5,000-6,000 workers) and Northshore (10,000 workers) are anchors; UNI-JAY Kumasi and Accra are mid-scale. The mechanism is market structure: few large operators dominate; many small operators remain domestic-focused. Commercial implication: market consolidation risk if large operators exit or reduce capacity. Thin export base limits Ghana's ability to absorb new buyer demand. Decision implication: park design should prioritize attracting 2-3 additional mid-scale garment operators (500-2,000 workers each) to diversify export base. Government should target operators from Bangladesh, Vietnam, India via trade missions.",
-      "evidence": "AGI: 'Garment export base thin beyond few players. Three or four actors export larger volumes. Most garment exports in small quantities, often tied to trade shows.' Dignity DTRT and Northshore are anchors; UNI-JAY Kumasi and Accra are mid-scale.",
-      "mechanism": "Few large operators dominate; many small operators remain domestic-focused. Market consolidation risk if large operators exit.",
-      "commercialImplication": "Thin export base limits Ghana's ability to absorb new buyer demand. Market consolidation risk if large operators exit.",
-      "decisionImplication": "Park design should prioritize attracting 2-3 additional mid-scale garment operators (500-2,000 workers each). Government should target operators from Bangladesh, Vietnam, India via trade missions."
-    }
-  ],
-  "access": [
-    {
-      "finding": "Cotton sector financing collapsed; revival requires structured pre-finance mechanism and farmer aggregation discipline",
-      "overview": "Cotton Sector Stakeholder reports 'historical cotton system relied on structured pre-financing of land preparation, inputs, chemicals, aggregation. Once companies stopped pre-financing and banks withdrew support due to perceived agricultural risk, production collapsed.' Quote: 'Cotton production, it is all about financing.' 'Banks see agriculture as very risky.' The mechanism is institutional: farmer-based organizations functioned effectively until fragmentation into competing entities undermined farmer cohesion and contract discipline. Quote: 'Farmer-based organizations… it was working very well until… everybody went his own way, chasing farmers.' Commercial implication: without guaranteed pre-finance mechanism or structured credit model, cotton production cannot be restored. Decision implication: government should establish cotton pre-finance facility (government-backed credit line) for structured farmer aggregation. Alternatively, anchor textile investor (e.g., ARISE, Akosombo) could provide pre-finance in exchange for offtake commitment. Land and agro-ecology are NOT binding constraints; financing and institutional discipline are.",
-      "evidence": "Cotton Sector Stakeholder: 'Historical cotton system relied on structured pre-financing. Once companies stopped pre-financing and banks withdrew support, production collapsed.' 'Cotton production, it is all about financing.' 'Farmer-based organizations… it was working very well until… everybody went his own way, chasing farmers.' 'Banks see agriculture as very risky.'",
-      "mechanism": "Farmer-based organizations functioned effectively until fragmentation. Financing withdrawal triggered production collapse. Revival requires structured pre-finance and farmer aggregation discipline.",
-      "commercialImplication": "Without pre-finance mechanism, cotton production cannot be restored. Anchor textile investor could provide pre-finance in exchange for offtake commitment.",
-      "decisionImplication": "Government should establish cotton pre-finance facility (government-backed credit line) for structured farmer aggregation. Alternatively, anchor textile investor could provide pre-finance. Land and agro-ecology are NOT binding constraints; financing and institutional discipline are."
-    },
-    {
-      "finding": "Tema port proximity drives investor location preference; northern viability depends on 24-month infrastructure delivery",
-      "overview": "GIPC notes 'investors concentrate near Accra-Tema due to infrastructure, market access, and logistics.' Northshore and Dignity DTRT are Tema-adjacent. GIPC states 'north viability depends on logistics and public investment delivery' and 'Big push infrastructure agenda aims to make northern investment viable (24-month first round).' The mechanism is logistics: Tema port is modern and accessible; northern locations require road/rail infrastructure investment. Commercial implication: Tema-adjacent parks will attract investors faster; northern parks require government infrastructure delivery to be viable. Decision implication: park sequencing should prioritize Tema corridor for first 2-3 years. Northern parks should only proceed if government commits to 24-month infrastructure delivery (roads, rail, utilities). Oxygen City (Aflao border) offers alternative logistics pathway (border proximity, Togo/Benin access) but requires government road corridor investment.",
-      "evidence": "GIPC: 'Investors concentrate near Accra-Tema due to infrastructure, market access, and logistics.' 'North viability depends on logistics and public investment delivery.' 'Big push infrastructure agenda aims to make northern investment viable (24-month first round). '",
-      "mechanism": "Tema port is modern and accessible; northern locations require road/rail infrastructure investment. Investor location preference follows logistics accessibility.",
-      "commercialImplication": "Tema-adjacent parks will attract investors faster. Northern parks require government infrastructure delivery to be viable.",
-      "decisionImplication": "Park sequencing should prioritize Tema corridor for first 2-3 years. Northern parks should only proceed if government commits to 24-month infrastructure delivery."
-    },
-    {
-      "finding": "SME inclusion barriers: training system misalignment and finance gap prevent small operator scale-up",
-      "overview": "AGI reports 'training system failure blocks scale-up' and 'commercial banks reportedly have no funding appetite for textiles.' UNI-JAY Kumasi and Accra are mid-scale but face expansion constraints. The mechanism is dual: (1) training system does not match factory needs (CTVET too shallow); (2) commercial banks avoid textiles due to perceived risk. Commercial implication: small operators cannot scale without external training and finance support. Decision implication: government should establish SME training fund (co-fund training for 5-10 small operators per year) and SME finance facility (concessional loans for working capital and equipment). Park operator could bundle training and finance support as tenant service.",
-      "evidence": "AGI: 'Training system failure blocks scale-up. Commercial banks reportedly have no funding appetite for textiles.' UNI-JAY Kumasi and Accra face expansion constraints despite market demand.",
-      "mechanism": "Training system misalignment + finance gap prevent small operator scale-up. Dual intervention needed: training support + concessional finance.",
-      "commercialImplication": "Small operators cannot scale without external training and finance support. SME training fund and finance facility could unlock 5-10 operator scale-ups per year.",
-      "decisionImplication": "Government should establish SME training fund and SME finance facility. Park operator could bundle training and finance support as tenant service."
-    },
-    {
-      "finding": "Land access is NOT binding constraint; 2.9M hectares available in northern regions; institutional discipline is binding",
-      "overview": "Cotton Sector Stakeholder reports 'land and agro-ecological conditions are NOT binding constraints. Ghana's northern regions retain substantial land suitable for cotton production.' Quote: 'The whole of the upper west region there's enough land for you. The whole of the northern region there's enough land for you. The whole of northeastern there's enough land. We have over 2.9 million hectares of land.' The mechanism is institutional: land availability is high; financing and farmer aggregation discipline are binding. Commercial implication: cotton revival does not require land acquisition; it requires financing and institutional discipline. Decision implication: government should focus on financing and farmer aggregation, not land acquisition. Juapong (69 acres, 60-65% used) and Akosombo (69 acres) have substantial expansion space; land is not binding for textile/garment parks.",
-      "evidence": "Cotton Sector Stakeholder: 'Land and agro-ecological conditions are NOT binding constraints. We have over 2.9 million hectares of land.' 'The whole of the upper west region there's enough land for you.'",
-      "mechanism": "Land availability is high; financing and farmer aggregation discipline are binding constraints.",
-      "commercialImplication": "Cotton revival does not require land acquisition; it requires financing and institutional discipline.",
-      "decisionImplication": "Government should focus on financing and farmer aggregation, not land acquisition. Juapong and Akosombo have substantial expansion space; land is not binding for textile/garment parks."
-    }
-  ],
-  "competitiveness": [
-    {
-      "finding": "Market-first (garment anchor) beats cotton-first; Northshore model outperforms ARISE model on execution speed",
-      "overview": "Northshore advocates 'anchor-first model, then integration. Start with proven garment manufacturing success, then move into backward integration.' ARISE started from cotton and moved forward; Northshore prefers market-first then backward integration from garment success. Northshore states 'market-led planning avoids training people on wrong products and building infrastructure that does not match buyer demand.' The mechanism is demand certainty: garment orders provide immediate revenue and cash flow; textile investment follows proven demand. Commercial implication: market-first model reduces execution risk and accelerates cash flow. Garment operators can then invest in backward integration (textiles) from position of strength. Decision implication: park design should prioritize garment anchor investors first (Northshore, Dignity DTRT model). Textile investment should follow garment success, not precede it. ARISE's cotton-first model is viable but slower and higher-risk.",
-      "evidence": "Northshore: 'Anchor-first model, then integration. Start with proven garment manufacturing success, then move into backward integration.' 'Market-led planning avoids training people on wrong products and building infrastructure that does not match buyer demand.' ARISE: started from cotton and moved forward; Northshore prefers market-first.",
-      "mechanism": "Garment orders provide immediate revenue and cash flow; textile investment follows proven demand. Market-first reduces execution risk.",
-      "commercialImplication": "Market-first model reduces execution risk and accelerates cash flow. Garment operators can then invest in backward integration from position of strength.",
-      "decisionImplication": "Park design should prioritize garment anchor investors first. Textile investment should follow garment success, not precede it."
-    },
-    {
-      "finding": "Duty savings by fabric type (synthetics 32-36% vs cotton 16-17%) drive product mix competitiveness; blended fabrics needed",
-      "overview": "ARISE notes 'duty savings differentials: synthetics (polyester) ~32-36%; cotton ~16-17%. Ghana needs blended and performance fabrics to create enough margin advantage.' Northshore states 'duty savings vary by fabric type. Ghana needs product and fabric choices creating enough savings to justify shifting orders from Vietnam or China. Blended performance fabrics, not only basic cotton.' The mechanism is tariff economics: synthetic fabrics have higher duty savings; blended fabrics create margin advantage over Asia. Commercial implication: operators should prioritize synthetic and blended fabric products (not basic cotton) to maximize tariff advantage. Decision implication: park design should assume synthetic and blended fabric focus. Government should communicate tariff advantage to buyers (marketing). Operators should invest in equipment for blended fabric production.",
-      "evidence": "ARISE: 'Duty savings differentials: synthetics 32-36%; cotton 16-17%. Ghana needs blended and performance fabrics.' Northshore: 'Duty savings vary by fabric type. Ghana needs product and fabric choices creating enough savings to justify shifting orders from Vietnam or China.'",
-      "mechanism": "Synthetic fabrics have higher duty savings; blended fabrics create margin advantage over Asia.",
-      "commercialImplication": "Operators should prioritize synthetic and blended fabric products to maximize tariff advantage.",
-      "decisionImplication": "Park design should assume synthetic and blended fabric focus. Government should communicate tariff advantage to buyers."
-    },
-    {
-      "finding": "First-mover infrastructure cost burden ($27M+ unfunded roads) requires government co-financing; private developers cannot absorb alone",
-      "overview": "Northshore absorbed infrastructure costs (electricity to site, land reclamation, internal roads, training facilities) and government road costing $27M remains unfunded. Northshore states 'first-mover cost burden real and visible' and 'no government official previously sat down to discuss fine-print needs.' ARISE notes 'private developers cannot wait 15 years' and 'low occupancy quickly creates bankruptcy risk.' The mechanism is capital structure: private developers finance zones with loans requiring repayment within few years; low occupancy quickly creates bankruptcy risk. Commercial implication: first-mover operators face 20-30% cost premium for infrastructure; this compresses margins and delays profitability. Decision implication: government should establish first-mover support package: (1) co-finance infrastructure (roads, utilities); (2) repay real costs; (3) unlock operations. Northshore model should be replicated: government co-finances infrastructure, private operator manages operations.",
-      "evidence": "Northshore: 'First-mover cost burden real and visible. Infrastructure financing and metering constraints. No government official previously sat down to discuss fine-print needs.' Government road costing $27M remains unfunded. ARISE: 'Private developers cannot wait 15 years. Low occupancy quickly creates bankruptcy risk.'",
-      "mechanism": "Private developers finance zones with loans requiring repayment within few years. Low occupancy quickly creates bankruptcy risk. Government co-financing needed.",
-      "commercialImplication": "First-mover operators face 20-30% cost premium for infrastructure. This compresses margins and delays profitability.",
-      "decisionImplication": "Government should establish first-mover support package: co-finance infrastructure, repay real costs, unlock operations."
-    },
-    {
-      "finding": "Soft infrastructure (services, logistics, waste management) determines success more than physical assets; ecosystem gaps are concrete",
-      "overview": "Northshore states 'ecosystem services must be planned, not assumed. Concrete ecosystem gaps: packaging capacity, food services (hygienic standards), logistics, waste management, janitorial services.' 'Soft infrastructure determines success, not physical assets alone.' 'Industrial parks cannot succeed if government only provides land.' The mechanism is operational: large facilities (10,000 workers) require supporting services; absence of services creates operational friction and cost penalties. Commercial implication: parks without supporting services face 10-15% cost premium for outsourced services. Decision implication: park design should include third-party operators for shared services (central kitchen, waste management, logistics, packaging). Northshore model: anchor firm sets standards; third-party operators provide services.",
-      "evidence": "Northshore: 'Ecosystem services must be planned, not assumed. Concrete ecosystem gaps: packaging capacity, food services, logistics, waste management, janitorial services.' 'Soft infrastructure determines success, not physical assets alone.' 'Industrial parks cannot succeed if government only provides land.'",
-      "mechanism": "Large facilities require supporting services. Absence of services creates operational friction and cost penalties.",
-      "commercialImplication": "Parks without supporting services face 10-15% cost premium for outsourced services.",
-      "decisionImplication": "Park design should include third-party operators for shared services. Anchor firm sets standards; third-party operators provide services."
-    },
-    {
-      "finding": "Competitiveness threshold: Ghana must look like $75 when Asia is $90 to compensate for Africa risk premium",
-      "overview": "ARISE states 'commercial viability must exceed Asia to compensate for Africa risk. If Asia cost is $90, Ghana must look more like $75 on paper. Compensates for policy, logistics, training, currency risks.' The mechanism is investor risk premium: Africa risk (policy, currency, logistics volatility) requires 15-20% return premium over Asia. Commercial implication: Ghana must achieve 15-20% cost advantage over Asia to attract investment. Current competitiveness gap: Ghana is ~$95-100 vs Asia $90; gap is negative. Decision implication: government must close competitiveness gap through: (1) electricity cost reduction ($0.12 → $0.07-0.08/kWh); (2) customs fee consolidation; (3) FX retention increase; (4) concessional financing. Combined impact: 10-15% cost reduction, achieving $80-85 competitiveness threshold.",
-      "evidence": "ARISE: 'Commercial viability must exceed Asia to compensate for Africa risk. If Asia cost is $90, Ghana must look more like $75 on paper. Compensates for policy, logistics, training, currency risks.' 'Investors expect higher returns in developing markets due to currency and policy volatility.'",
-      "mechanism": "Africa risk premium requires 15-20% return premium over Asia. Ghana must achieve 15-20% cost advantage to attract investment.",
-      "commercialImplication": "Ghana must achieve 15-20% cost advantage over Asia to attract investment. Current gap is negative.",
-      "decisionImplication": "Government must close competitiveness gap through electricity cost reduction, customs fee consolidation, FX retention increase, concessional financing."
-    }
-  ],
-  "gapsAndEvidenceNeeded": [
-    "Quantitative productivity metrics (units/worker/day) for Dignity DTRT, Northshore, UNI-JAY vs Bangladesh/Vietnam benchmarks",
-    "Detailed cost breakdown (labor, utilities, logistics, customs, compliance) for representative garment and textile operations",
-    "Buyer commitment pipeline: number of committed orders, volumes, timelines for Northshore, Dignity DTRT, UNI-JAY",
-    "Oxygen City: T&G-specific technical design, committed tenant pipeline, infrastructure cost estimates",
-    "Juapong restart timeline and financing plan; customer reconnection feasibility assessment",
-    "Akosombo: detailed investment case for textile restart; customer offtake agreements with GTP, ATL",
-    "Cotton sector: structured pre-finance mechanism design; farmer aggregation model; Benin supply agreement terms",
-    "Government payment terms enforcement: current average payment cycle; enforcement mechanism for 30-day target",
-    "AGOA renewal timeline and bilateral trade agreement negotiations with US",
-    "Tax stamp enforcement timeline and impact modeling on domestic textile market"
-  ],
-  "urgentFollowUpItems": [
-    "Secure government commitment to electricity cost reduction pathway ($0.12 → $0.07-0.08/kWh) with 24-month timeline",
-    "Establish first-mover support package for Northshore and Dignity DTRT: co-finance infrastructure, repay real costs",
-    "Establish cotton pre-finance facility (government-backed credit line) for structured farmer aggregation; target 10,000 hectares by 2027",
-    "Formalize Benin cotton supply agreements (government-to-government) to secure reliable access for textile operators",
-    "Establish SME training fund and SME finance facility; target 5-10 operator scale-ups per year",
-    "Establish pooled export certification support program (co-fund fees for cohorts of 5-6 firms)",
-    "Consolidate customs billing into single master bill; establish preferential 'green channel' for export inputs",
-    "Increase FX retention allowance for exporters to 15-20% (from current 5%)",
-    "Establish 30-day government payment terms for all procurement contracts; enforce via treasury directive",
-    "Complete Oxygen City T&G-specific technical design; identify committed tenant pipeline before infrastructure rollout",
-    "Accelerate Juapong restart: secure financing, reconnect customers, target 1,200-1,500 employment by Q4 2026",
-    "Accelerate tax stamp enforcement on domestic textiles; communicate timeline to investors (30M yard market expansion opportunity)",
-    "Pursue AGOA renewal and bilateral trade agreements with US; communicate multi-year certainty to buyers",
-    "Establish park operator selection process: prioritize market-first (garment anchor) model over cotton-first"
-  ]
-}
+    "executiveSummary": "Ghana's T&G sector faces a structural cost-competitiveness crisis: established manufacturers (Dignity DTRT, UNI-JAY, Akosombo) report that Ghana is no longer cost-competitive against Bangladesh, Vietnam, and China, with utilities costs ($0.12/kWh vs $0.03-0.09 regionally) and currency strength eroding margins despite trainable labor and AGOA access. The critical cross-cutting insight is that commercial viability now depends on anchor-buyer-first sequencing and market-led infrastructure planning rather than cotton-first vertical integration—greenfield industrial parks without pre-committed tenant pipelines risk becoming empty assets, while legacy textile assets (ATL, Juapong, UTP) are non-revivable without complete machinery replacement and operator discipline.",
+    "criticalFindings": [
+      {
+        "rank": 1,
+        "title": "Utilities Cost Barrier Blocks Competitiveness vs Regional Peers",
+        "impact": "High",
+        "insight": "Ghana's electricity cost ($0.12/kWh) is 4× East Africa ($0.03/kWh) and 33% above Togo ($0.08-0.09/kWh), making export-oriented garment production unviable without subsidy or on-site generation.",
+        "recommendedAction": "Benchmark and lock utilities pricing for any industrial park site; model on-site solar/gas generation ROI; condition park viability on achieving $0.05-0.08/kWh delivered cost; prioritize sites with gas pipeline access (Tema corridor, Benin model precedent)."
+      },
+      {
+        "rank": 2,
+        "title": "Anchor-Buyer-First Model Mandatory; Greenfield Parks Without Tenant Pipeline Fail",
+        "impact": "High",
+        "insight": "Northshore and ARISE data show that market-led planning (buyer engagement before infrastructure) succeeds; Oxygen City's 200-acre request without identified garment anchor tenant signals risk of 'build first, empty park later' failure.",
+        "recommendedAction": "Require pre-commitment from at least one anchor tenant (500+ employees, 3-year offtake) before park infrastructure investment; use Dignity DTRT and UNI-JAY as proof-of-concept anchors; avoid greenfield parks without secured buyer pipeline."
+      },
+      {
+        "rank": 3,
+        "title": "Legacy Textile Assets Non-Revivable; Greenfield Preferred Over Rehabilitation",
+        "impact": "High",
+        "insight": "ATL, Juapong, and UTP machinery is 50-60 years old with unit economics unviable ($2.3/meter internal cost vs $0.60-0.70/meter market); Juapong restart feasible only with complete machinery replacement and operator discipline, not rehabilitation.",
+        "recommendedAction": "Scrap legacy textile assets; redirect capital to greenfield garment manufacturing or selective modernization (e.g., Akosombo dyeing/printing model); if Juapong restart pursued, require 100% capex replacement and 2-year operator transition plan with external management."
+      }
+    ],
+    "quality": [
+      {
+        "finding": "Export Certifications (SMETA, COS, OCTEC) Are Gating Items for Market Access",
+        "evidence": "UNI-JAY (Accra) identifies export certifications as expensive, non-negotiable barriers; Dignity DTRT shifted regional sourcing due to compliance constraints; buyer compliance requirements drive quality investment, not basic sewing capability.",
+        "implication": "Park design must include shared QA lab and certification support services; tenant selection should prioritize firms with existing compliance infrastructure or willingness to invest; certification costs ($10k-50k per firm estimated) should be factored into tenant financial models and may justify park-level subsidy or shared services."
+      },
+      {
+        "finding": "Expatriate Supervision and Automation Critical for Quality Consistency; Local Workforce Trainable but Requires Structured Discipline",
+        "evidence": "UNI-JAY (Kumasi) operates with 4 expatriates (2 production staff, 1 mechanic, 1 quality) for 250 employees; Juapong's quality advantage stems from disciplined fiber preparation ('blue room' protocol); Dignity DTRT scaled from 150 to 5,000-6,000 workers over 11-12 years with product complexity increase.",
+        "implication": "Quality is achievable at scale but requires structured training systems and initial expatriate support; park design should include training facility and expatriate housing; tenant selection should prioritize firms with proven training models or willingness to adopt structured quality protocols; CTVET system insufficient (too shallow per AGI); park-level training center justified."
+      }
+    ],
+    "commercialViability": [
+      {
+        "finding": "Ghana No Longer Cost-Competitive; Margin Squeeze Driven by Utilities, Currency, and Labor Costs",
+        "evidence": "Dignity DTRT: 'Ghana no longer cost-competitive (expensive now)'; ARISE: energy economics drive viability ($0.05/kWh target vs $0.12/kWh current); Akosombo: spinning/weaving failed on unit economics ($2.3/meter internal vs $0.60-0.70/meter market); AGI: 'domestic producers lose on price not quality.'",
+        "implication": "Export-oriented garment parks require utilities subsidy or on-site generation to achieve regional competitiveness; domestic market focus (uniforms, institutional procurement) more viable than export-led model; working capital constraints and high interest rates (banks 'golden' interest per UNI-JAY) require concessional financing; investor ROI models must assume 10-12% cost of capital, not 15%+."
+      },
+      {
+        "finding": "Working Capital and FX Retention Constraints Limit Capacity Utilization; Government Payment Delays Undermine Local Procurement",
+        "evidence": "Akosombo: working capital constraint limits capacity utilization; UNI-JAY: delayed government payments (should be 21-30 days, max 45 days) undermine working capital; Northshore: working capital and FX retention tension; Dignity DTRT: policy bottlenecks (customs billing) create avoidable cost penalties.",
+        "implication": "Park design should include working capital facility or supply-chain financing mechanism; government procurement pathway (uniforms, institutional demand) viable but requires payment discipline (21-30 day terms); export-led model requires FX retention guarantee and customs billing streamlining; tenant financial models must assume 60-90 day working capital cycle, not 30 days."
+      }
+    ],
+    "competitiveness": [
+      {
+        "finding": "AGOA Advantage Faded; 12-Month Window Insufficient vs Regional Competitors (Egypt, Jordan, East Africa)",
+        "evidence": "Dignity DTRT: 'AGOA advantage faded'; Northshore: 'AGOA uncertainty undermines buyer confidence (12-month window insufficient)'; ARISE: 'AGOA weak predictability (1-year window)'; regional sourcing shift (Benin) emerging as viable alternative.",
+        "implication": "AGOA cannot be primary competitive lever; park strategy should emphasize regional market access (ECOWAS, AfCFTA) and domestic procurement (government uniforms, institutional demand) over US export focus; tariff economics vary by fabric type (synthetics 32-36% duty relief vs cotton 16-17%), requiring product-mix optimization; Benin cotton sourcing and regional manufacturing hubs (ARISE model) more predictable than AGOA."
+      },
+      {
+        "finding": "Regional Sourcing (Benin Cotton) Emerging as Viable Near-Term Pathway; Domestic Cotton Revival Depends on Financing Systems, Not Agro-Ecology",
+        "evidence": "GIZ: 'regional cotton sourcing (Benin, Burkina) offers near-term pathway'; James Wiyor (Cotton Sector): 'Ghana's cotton constraint is institutional and financial, not agro-ecological'; Akosombo: input sourcing via imported grey cloth + local conversion; Juapong: cotton access not constraint, internal preprocessing capacity exists.",
+        "implication": "Vertical integration (cotton-to-garment) not prerequisite for park viability; regional sourcing (Benin) reduces capex and risk vs domestic cotton revival; domestic cotton revival requires financing system rebuild and institutional discipline (farmer aggregation, anchor buyer discipline), not agro-ecological investment; park design should prioritize garment manufacturing and selective textile modernization (dyeing/printing) over cotton production; cotton strategy should be 3-5 year horizon, not immediate."
+      }
+    ],
+    "gapsAndEvidenceNeeded": [
+      "Detailed utilities cost benchmarking: current tariffs, on-site generation ROI, gas pipeline availability and cost by site (Tema, Tema North, Oxygen City, northern regions)",
+      "Anchor tenant pipeline: confirmed buyer commitments (offtake agreements, 3-year volume/price terms) for proposed park sites",
+      "Working capital facility design: supply-chain financing mechanisms, government payment discipline enforcement, FX retention guarantees",
+      "Certification cost and timeline: SMETA, COS, OCTEC audit costs, timeline to certification, shared lab ROI for park-level investment",
+      "Expatriate support model: cost, availability, visa/permit facilitation, housing/services requirements for quality-critical roles",
+      "Government procurement pathway: institutional demand (schools, mining, military uniforms), payment terms, volume forecasts, procurement process timeline",
+      "Benin cotton sourcing: landed cost, compliance/traceability requirements, supplier reliability, volume availability",
+      "Domestic cotton financing: farmer aggregation models, anchor buyer discipline mechanisms, financing cost and terms, production volume potential",
+      "Regional market access: ECOWAS/AfCFTA tariff schedules by product, trade facilitation barriers (customs, standards), buyer engagement strategy",
+      "Legacy asset restart: Juapong machinery replacement capex, operator transition timeline, customer reconnection feasibility, employment ramp-up schedule"
+    ],
+    "urgentFollowUpItems": [
+      "Lock utilities pricing for Tema corridor and Oxygen City sites; model on-site solar/gas generation ROI; benchmark vs Benin ARISE ($0.08-0.09/kWh achieved cost)",
+      "Secure anchor tenant commitment (Dignity DTRT expansion, UNI-JAY Accra/Kumasi scaling, or new entrant) with 3-year offtake agreement before park infrastructure investment",
+      "Conduct detailed Juapong restart feasibility study: machinery replacement capex, operator transition plan, customer reconnection timeline, employment ramp-up schedule",
+      "Design park-level shared services: QA lab and certification support, training facility, working capital facility, expatriate housing/services",
+      "Establish government payment discipline protocol: 21-30 day terms enforcement, FX retention guarantee, customs billing streamlining for park tenants",
+      "Benchmark Benin ARISE model: cost structure, tenant pipeline, utilities delivery, government support mechanisms, timeline to profitability",
+      "Engage regional buyers (Nigeria, Togo, Benin, East Africa) for product-market fit and offtake commitment; prioritize uniforms and institutional procurement over US export focus",
+      "Develop domestic cotton financing proposal: farmer aggregation model, anchor buyer discipline mechanism, financing cost and terms, production volume potential for 2-3 year horizon"
+    ]
+  }
 }
