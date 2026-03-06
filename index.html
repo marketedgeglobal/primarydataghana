@@ -411,98 +411,16 @@
         <div class="subtitle">Monday, March 2, 2026</div>
     </header>
 
+
     <div class="container">
-        <!-- Metadata Section -->
-        <div class="metadata">
-            <h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3>
-            <div class="metadata-grid">
-                <div class="metadata-item">
-                    <strong>Report Generated:</strong><br>
-                    Monday, March 2, 2026 at 7:00 AM CT
-                </div>
-                <div class="metadata-item">
-                    <strong>Data Period:</strong><br>
-                    February 24 - March 2, 2026
-                </div>
-                <div class="metadata-item">
-                    <strong>Total Responses:</strong><br>
-                    12 organizations
-                </div>
-                <div class="metadata-item">
-                    <strong>Analyst:</strong><br>
-                    Automated Workflow Agent
-                </div>
-            </div>
-        </div>
+        <!-- Metadata Section (from JSON) -->
+        <div class="metadata" id="metadata-section"></div>
 
-        <!-- Executive Summary -->
-        <div class="section">
-            <h2>📊 Executive Summary</h2>
-            
-            <div class="key-metrics">
-                <div class="metric-card">
-                    <div class="metric-label">Total Responses</div>
-                    <div class="metric-value">12</div>
-                    <div class="metric-label">Organizations</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">Gender Distribution</div>
-                    <div class="metric-value">7M/2F/3TBD</div>
-                    <div class="metric-label">Male / Female / TBD</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">Data Completeness</div>
-                    <div class="metric-value">100%</div>
-                    <div class="metric-label">Narrative Fields</div>
-                </div>
-                <div class="metric-card">
-                    <div class="metric-label">Score Field</div>
-                    <div class="metric-value">0%</div>
-                    <div class="metric-label">❌ CRITICAL GAP</div>
-                </div>
-            </div>
+        <!-- Executive Summary (from JSON) -->
+        <div class="section" id="executive-summary-section"></div>
 
-            <div class="alert alert-critical">
-                <h3 style="margin-top: 0; color: #721c24;">🚨 Critical Finding</h3>
-                <p><strong>URGENT:</strong> All 12 responses are missing the "score" field. This represents a critical data quality issue that must be addressed immediately to enable proper prioritization and analysis.</p>
-            </div>
-        </div>
-
-        <!-- Critical Findings -->
-        <div class="section">
-            <h2>⚠️ Critical Findings & Urgent Items</h2>
-            
-            <div class="alert alert-critical">
-                <h3 style="margin-top: 0; color: #721c24;">1. Data Quality Crisis - Missing Scores</h3>
-                <p><strong>Urgency:</strong> CRITICAL<br>
-                <strong>Issue:</strong> 100% of responses (12/12) lack scoring data<br>
-                <strong>Impact:</strong> Cannot properly prioritize organizations or quantify urgency levels</p>
-                <h4>Recommended Action:</h4>
-                <ul>
-                    <li>Immediately contact all 12 organizations to collect missing score data</li>
-                    <li>Implement validation rules in form to prevent future submissions without scores</li>
-                    <li>Establish deadline for score submission (suggest within 48 hours)</li>
-                </ul>
-            </div>
-
-            <div class="alert alert-high">
-                <h3 style="margin-top: 0; color: #856404;">2. Incomplete Contact Information</h3>
-                <p><strong>Urgency:</strong> HIGH<br>
-                <strong>Organizations Affected:</strong> 4 organizations</p>
-                <ul>
-                    <li>Juapong Textiles: Contact person listed as "TBD"</li>
-                    <li>Oxygen City: Both contact person and gender listed as "TBD"</li>
-                    <li>Unijay (Accra): Both contact person and gender listed as "TBD"</li>
-                    <li>Cotton Sector Stakeholder: Contact person unclear ("James?")</li>
-                </ul>
-                <h4>Recommended Action:</h4>
-                <ul>
-                    <li>Conduct immediate follow-up calls to obtain complete contact information</li>
-                    <li>Update CRM with verified contact details</li>
-                    <li>Establish protocol for mandatory contact information before form submission</li>
-                </ul>
-            </div>
-        </div>
+        <!-- Critical Findings (from JSON) -->
+        <div class="section" id="critical-findings-section"></div>
 
         <!-- Organization Analysis -->
         <div class="section">
@@ -984,6 +902,67 @@
             <hr style="margin: 20px 0; border: none; border-top: 1px solid rgba(124, 200, 220, 0.25);">
             <p style="color: #9fb3c2; font-size: 0.9em;">Generated by Primary Data Ghana Agent | <a href="https://github.com/marketedgeglobal/primarydataghana" style="color: #8fd3f4;">GitHub Repository</a></p>
         </footer>
-    </div>
+        </div>
+
+        <script>
+        // Fetch and render analysis-results.json
+        fetch('analysis-results.json')
+            .then(response => response.json())
+            .then(data => {
+                // Metadata Section
+                document.getElementById('metadata-section').innerHTML = `
+                    <h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3>
+                    <div class="metadata-grid">
+                        <div class="metadata-item">
+                            <strong>Report Generated:</strong><br>
+                            ${data.reportGenerated}
+                        </div>
+                        <div class="metadata-item">
+                            <strong>Data Period:</strong><br>
+                            ${data.dataPeriod}
+                        </div>
+                        <div class="metadata-item">
+                            <strong>Total Responses:</strong><br>
+                            ${data.totalResponses} organizations
+                        </div>
+                        <div class="metadata-item">
+                            <strong>Analyst:</strong><br>
+                            ${data.analyst}
+                        </div>
+                    </div>
+                `;
+
+                // Executive Summary Section
+                document.getElementById('executive-summary-section').innerHTML = `
+                    <h2>📊 Executive Summary</h2>
+                    <div class="key-metrics">
+                        ${data.keyMetrics.map(metric => `
+                            <div class="metric-card">
+                                <div class="metric-label">${metric.label}</div>
+                                <div class="metric-value">${metric.value}</div>
+                                <div class="metric-label">${metric.subLabel}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+
+                // Critical Findings Section
+                document.getElementById('critical-findings-section').innerHTML = `
+                    <h2>⚠️ Critical Findings & Urgent Items</h2>
+                    ${data.criticalFindings.map((finding, idx) => `
+                        <div class="alert alert-${finding.urgency.toLowerCase()}">
+                            <h3 style="margin-top: 0;">${idx+1}. ${finding.title}</h3>
+                            ${finding.issue ? `<p><strong>Urgency:</strong> ${finding.urgency}<br><strong>Issue:</strong> ${finding.issue}${finding.impact ? `<br><strong>Impact:</strong> ${finding.impact}` : ''}</p>` : ''}
+                            ${finding.organizationsAffected ? `<p><strong>Organizations Affected:</strong></p><ul>${finding.organizationsAffected.map(org => `<li>${org}</li>`).join('')}</ul>` : ''}
+                            <h4>Recommended Action:</h4>
+                            <ul>${finding.actions.map(action => `<li>${action}</li>`).join('')}</ul>
+                        </div>
+                    `).join('')}
+                `;
+            })
+            .catch(err => {
+                document.getElementById('metadata-section').innerHTML = '<div class="alert alert-critical">Could not load analysis-results.json</div>';
+            });
+        </script>
 </body>
 </html>

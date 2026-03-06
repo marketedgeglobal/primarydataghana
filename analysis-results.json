@@ -1,0 +1,40 @@
+{
+  "reportGenerated": "Monday, March 2, 2026 at 7:00 AM CT",
+  "dataPeriod": "February 24 - March 2, 2026",
+  "totalResponses": 12,
+  "analyst": "Automated Workflow Agent",
+  "keyMetrics": [
+    {"label": "Total Responses", "value": 12, "subLabel": "Organizations"},
+    {"label": "Gender Distribution", "value": "7M/2F/3TBD", "subLabel": "Male / Female / TBD"},
+    {"label": "Data Completeness", "value": "100%", "subLabel": "Narrative Fields"},
+    {"label": "Score Field", "value": "0%", "subLabel": "❌ CRITICAL GAP"}
+  ],
+  "criticalFindings": [
+    {
+      "title": "Data Quality Crisis - Missing Scores",
+      "urgency": "CRITICAL",
+      "issue": "100% of responses (12/12) lack scoring data",
+      "impact": "Cannot properly prioritize organizations or quantify urgency levels",
+      "actions": [
+        "Immediately contact all 12 organizations to collect missing score data",
+        "Implement validation rules in form to prevent future submissions without scores",
+        "Establish deadline for score submission (suggest within 48 hours)"
+      ]
+    },
+    {
+      "title": "Incomplete Contact Information",
+      "urgency": "HIGH",
+      "organizationsAffected": [
+        "Juapong Textiles: Contact person listed as 'TBD'",
+        "Oxygen City: Both contact person and gender listed as 'TBD'",
+        "Unijay (Accra): Both contact person and gender listed as 'TBD'",
+        "Cotton Sector Stakeholder: Contact person unclear ('James?')"
+      ],
+      "actions": [
+        "Conduct immediate follow-up calls to obtain complete contact information",
+        "Update CRM with verified contact details",
+        "Establish protocol for mandatory contact information before form submission"
+      ]
+    }
+  ]
+}
