@@ -921,61 +921,75 @@
                 return response.json();
             })
             .then(data => {
-                // Metadata Section
-                document.getElementById('metadata-section').innerHTML = `
-                    <h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3>
-                    <div class="metadata-grid">
-                        <div class="metadata-item">
-                            <strong>Report Generated:</strong><br>
-                            ${data.reportGenerated}
-                        </div>
-                        <div class="metadata-item">
-                            <strong>Data Period:</strong><br>
-                            ${data.dataPeriod}
-                        </div>
-                        <div class="metadata-item">
-                            <strong>Total Responses:</strong><br>
-                            ${data.totalResponses} organizations
-                        </div>
-                        <div class="metadata-item">
-                            <strong>Analyst:</strong><br>
-                            ${data.analyst}
-                        </div>
-                    </div>
-                `;
+                // Metadata Section (auto-fill with available fields)
+                const metaFields = [
+                    {label: 'Report Generated', value: data.reportGenerated || 'N/A'},
+                    {label: 'Data Period', value: data.dataPeriod || 'N/A'},
+                    {label: 'Total Responses', value: (data.totalResponses !== undefined ? data.totalResponses + ' organizations' : 'N/A')},
+                    {label: 'Analyst', value: data.analyst || 'N/A'}
+                ];
+                let metaHtml = '<h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3><div class="metadata-grid">';
+                metaFields.forEach(f => {
+                    metaHtml += `<div class="metadata-item"><strong>${f.label}:</strong><br>${f.value}</div>`;
+                });
+                metaHtml += '</div>';
+                document.getElementById('metadata-section').innerHTML = metaHtml;
 
-                // Executive Summary Section
-                document.getElementById('executive-summary-section').innerHTML = `
-                    <h2>📊 Executive Summary</h2>
-                    <div class="key-metrics">
-                        ${data.keyMetrics.map(metric => `
-                            <div class="metric-card">
-                                <div class="metric-label">${metric.label}</div>
-                                <div class="metric-value">${metric.value}</div>
-                                <div class="metric-label">${metric.subLabel}</div>
-                            </div>
-                        `).join('')}
-                    </div>
-                `;
+                // Executive Summary Section (auto-fill with available keyMetrics)
+                let summaryHtml = '<h2>📊 Executive Summary</h2>';
+                if (Array.isArray(data.keyMetrics) && data.keyMetrics.length > 0) {
+                    summaryHtml += '<div class="key-metrics">';
+                    data.keyMetrics.forEach(metric => {
+                        summaryHtml += `<div class="metric-card">`;
+                        summaryHtml += `<div class="metric-label">${metric.label || 'Metric'}</div>`;
+                        summaryHtml += `<div class="metric-value">${metric.value !== undefined ? metric.value : 'N/A'}</div>`;
+                        summaryHtml += `<div class="metric-label">${metric.subLabel || ''}</div>`;
+                        summaryHtml += `</div>`;
+                    });
+                    summaryHtml += '</div>';
+                } else {
+                    summaryHtml += '<div style="color: var(--color-muted);">No metrics available.</div>';
+                }
+                document.getElementById('executive-summary-section').innerHTML = summaryHtml;
 
-                // Critical Findings Section
-                document.getElementById('critical-findings-section').innerHTML = `
-                    <h2>⚠️ Critical Findings & Urgent Items</h2>
-                    ${data.criticalFindings.map((finding, idx) => `
-                        <div class="alert alert-${finding.urgency.toLowerCase()}">
-                            <h3 style="margin-top: 0;">${idx+1}. ${finding.title}</h3>
-                            ${finding.issue ? `<p><strong>Urgency:</strong> ${finding.urgency}<br><strong>Issue:</strong> ${finding.issue}${finding.impact ? `<br><strong>Impact:</strong> ${finding.impact}` : ''}</p>` : ''}
-                            ${finding.organizationsAffected ? `<p><strong>Organizations Affected:</strong></p><ul>${finding.organizationsAffected.map(org => `<li>${org}</li>`).join('')}</ul>` : ''}
-                            <h4>Recommended Action:</h4>
-                            <ul>${finding.actions.map(action => `<li>${action}</li>`).join('')}</ul>
-                        </div>
-                    `).join('')}
-                `;
+                // Critical Findings Section (auto-fill with available findings)
+                let findingsHtml = '<h2>⚠️ Critical Findings & Urgent Items</h2>';
+                if (Array.isArray(data.criticalFindings) && data.criticalFindings.length > 0) {
+                    data.criticalFindings.forEach((finding, idx) => {
+                        const urgency = finding.urgency ? finding.urgency.toLowerCase() : 'medium';
+                        findingsHtml += `<div class="alert alert-${urgency}">`;
+                        findingsHtml += `<h3 style="margin-top: 0;">${idx+1}. ${finding.title || 'Untitled Finding'}</h3>`;
+                        if (finding.issue || finding.urgency || finding.impact) {
+                            findingsHtml += '<p>';
+                            if (finding.urgency) findingsHtml += `<strong>Urgency:</strong> ${finding.urgency}<br>`;
+                            if (finding.issue) findingsHtml += `<strong>Issue:</strong> ${finding.issue}<br>`;
+                            if (finding.impact) findingsHtml += `<strong>Impact:</strong> ${finding.impact}<br>`;
+                            findingsHtml += '</p>';
+                        }
+                        if (Array.isArray(finding.organizationsAffected) && finding.organizationsAffected.length > 0) {
+                            findingsHtml += '<p><strong>Organizations Affected:</strong></p><ul>';
+                            finding.organizationsAffected.forEach(org => {
+                                findingsHtml += `<li>${org}</li>`;
+                            });
+                            findingsHtml += '</ul>';
+                        }
+                        if (Array.isArray(finding.actions) && finding.actions.length > 0) {
+                            findingsHtml += '<h4>Recommended Action:</h4><ul>';
+                            finding.actions.forEach(action => {
+                                findingsHtml += `<li>${action}</li>`;
+                            });
+                            findingsHtml += '</ul>';
+                        }
+                        findingsHtml += '</div>';
+                    });
+                } else {
+                    findingsHtml += '<div style="color: var(--color-muted);">No findings available.</div>';
+                }
+                document.getElementById('critical-findings-section').innerHTML = findingsHtml;
             })
             .catch(err => {
-                // Hide error message and show soft fallback
+                // Hide error message and show a soft fallback
                 document.getElementById('metadata-section').innerHTML = `
-                    <div class="alert alert-critical" style="display:none;"></div>
                     <div style="color: var(--color-muted); margin-top: 10px;">Report data unavailable.</div>
                 `;
                 document.getElementById('executive-summary-section').innerHTML = `
