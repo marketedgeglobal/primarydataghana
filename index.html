@@ -915,7 +915,7 @@
 
         <script>
         // Fetch and render analysis-results.json
-        fetch('analysis-results.json')
+        fetch('./analysis-results.json')
             .then(response => {
                 if (!response.ok) throw new Error('Not found');
                 return response.json();
