@@ -921,61 +921,79 @@
                 return response.json();
             })
             .then(data => {
-                // --- METADATA SECTION ---
-                let metaHtml = '<h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3><div class="metadata-grid">';
-                metaHtml += `<div class="metadata-item"><strong>Title:</strong><br>${data.title || 'N/A'}</div>`;
-                metaHtml += `<div class="metadata-item"><strong>Date:</strong><br>${data.timestamp ? (new Date(data.timestamp)).toLocaleString() : 'N/A'}</div>`;
-                // Add counts for each main section
-                const sectionCounts = [
-                  {label: 'Quality Findings', arr: data.quality},
-                  {label: 'Cost Findings', arr: data.cost},
-                  {label: 'Market Findings', arr: data.market},
-                  {label: 'Access Findings', arr: data.access},
-                  {label: 'Competitiveness Findings', arr: data.competitiveness}
-                ];
-                sectionCounts.forEach(s => {
-                  metaHtml += `<div class="metadata-item"><strong>${s.label}:</strong><br>${Array.isArray(s.arr) ? s.arr.length : 0}</div>`;
-                });
-                metaHtml += '</div>';
-                document.getElementById('metadata-section').innerHTML = metaHtml;
+                                // --- METADATA SECTION ---
+                                let metaHtml = '<h3 style="margin-top: 0; color: var(--color-pill-text);">Report Information</h3><div class="metadata-grid">';
+                                metaHtml += `<div class="metadata-item"><strong>Title:</strong><br>${data.title || 'N/A'}</div>`;
+                                metaHtml += `<div class="metadata-item"><strong>Date:</strong><br>${data.timestamp ? (new Date(data.timestamp)).toLocaleString() : 'N/A'}</div>`;
+                                if (data._metadata) {
+                                    metaHtml += `<div class="metadata-item"><strong>Data Source:</strong><br>${data._metadata.dataSource || 'N/A'}</div>`;
+                                    metaHtml += `<div class="metadata-item"><strong>Respondent Count:</strong><br>${data._metadata.respondentCount || 'N/A'}</div>`;
+                                    metaHtml += `<div class="metadata-item"><strong>Collection Date Range:</strong><br>${data._metadata.collectionDateRange || 'N/A'}</div>`;
+                                }
+                                // Add counts for each main section
+                                const sectionCounts = [
+                                    {label: 'Quality Findings', arr: data.quality},
+                                    {label: 'Cost Findings', arr: data.cost},
+                                    {label: 'Market Findings', arr: data.market},
+                                    {label: 'Access Findings', arr: data.access},
+                                    {label: 'Competitiveness Findings', arr: data.competitiveness}
+                                ];
+                                sectionCounts.forEach(s => {
+                                    metaHtml += `<div class="metadata-item"><strong>${s.label}:</strong><br>${Array.isArray(s.arr) ? s.arr.length : 0}</div>`;
+                                });
+                                metaHtml += '</div>';
+                                document.getElementById('metadata-section').innerHTML = metaHtml;
 
-                // --- EXECUTIVE SUMMARY SECTION ---
-                let summaryHtml = '<h2>📊 Executive Summary</h2>';
-                summaryHtml += '<ul>';
-                sectionCounts.forEach(s => {
-                  if (Array.isArray(s.arr) && s.arr.length > 0) {
-                    summaryHtml += `<li><strong>${s.label}:</strong> ${s.arr.length} key findings</li>`;
-                  }
-                });
-                summaryHtml += '</ul>';
-                // Optionally, show the first finding from each section as a highlight
-                summaryHtml += '<div style="margin-top:1em;">';
-                sectionCounts.forEach(s => {
-                  if (Array.isArray(s.arr) && s.arr.length > 0) {
-                    const f = s.arr[0];
-                    summaryHtml += `<div class="metric-card"><div class="metric-label"><strong>${s.label} Highlight:</strong></div><div class="metric-value">${f.finding || 'N/A'}</div></div>`;
-                  }
-                });
-                summaryHtml += '</div>';
-                document.getElementById('executive-summary-section').innerHTML = summaryHtml;
+                                // --- EXECUTIVE SUMMARY SECTION ---
+                                let summaryHtml = '<h2>📊 Executive Summary</h2>';
+                                if (data.executiveSummary) {
+                                    summaryHtml += `<div style="margin-bottom:1em; color: var(--color-body); font-size:1.15em;">${data.executiveSummary}</div>`;
+                                }
+                                summaryHtml += '<ul>';
+                                sectionCounts.forEach(s => {
+                                    if (Array.isArray(s.arr) && s.arr.length > 0) {
+                                        summaryHtml += `<li><strong>${s.label}:</strong> ${s.arr.length} key findings</li>`;
+                                    }
+                                });
+                                summaryHtml += '</ul>';
+                                // Optionally, show the first finding from each section as a highlight
+                                summaryHtml += '<div style="margin-top:1em;">';
+                                sectionCounts.forEach(s => {
+                                    if (Array.isArray(s.arr) && s.arr.length > 0) {
+                                        const f = s.arr[0];
+                                        summaryHtml += `<div class="metric-card"><div class="metric-label"><strong>${s.label} Highlight:</strong></div><div class="metric-value">${f.finding || 'N/A'}</div></div>`;
+                                    }
+                                });
+                                summaryHtml += '</div>';
+                                document.getElementById('executive-summary-section').innerHTML = summaryHtml;
 
-                // --- CRITICAL FINDINGS SECTION ---
-                let findingsHtml = '<h2>⚠️ Critical Findings & Urgent Items</h2>';
-                // Show the first 1-2 findings from each section, with details
-                sectionCounts.forEach(s => {
-                  if (Array.isArray(s.arr) && s.arr.length > 0) {
-                    s.arr.slice(0,2).forEach((f, idx) => {
-                      findingsHtml += `<div class="alert alert-high">`;
-                      findingsHtml += `<h3 style="margin-top: 0;">${s.label} #${idx+1}</h3>`;
-                      findingsHtml += `<strong>Finding:</strong> ${f.finding || 'N/A'}<br>`;
-                      if (f.overview) findingsHtml += `<strong>Overview:</strong> ${f.overview}<br>`;
-                      if (f.commercialImplication) findingsHtml += `<strong>Commercial Implication:</strong> ${f.commercialImplication}<br>`;
-                      if (f.decisionImplication) findingsHtml += `<strong>Decision Implication:</strong> ${f.decisionImplication}<br>`;
-                      findingsHtml += '</div>';
-                    });
-                  }
-                });
-                document.getElementById('critical-findings-section').innerHTML = findingsHtml;
+                                // --- CRITICAL FINDINGS SECTION ---
+                                let findingsHtml = '<h2>⚠️ Critical Findings & Urgent Items</h2>';
+                                if (Array.isArray(data.criticalFindings) && data.criticalFindings.length > 0) {
+                                    data.criticalFindings.forEach(f => {
+                                        findingsHtml += `<div class="alert alert-critical">`;
+                                        findingsHtml += `<strong>Rank ${f.rank}:</strong> ${f.title || 'N/A'}<br>`;
+                                        findingsHtml += `<strong>Impact:</strong> ${f.impact || 'N/A'}<br>`;
+                                        findingsHtml += `<strong>Insight:</strong> ${f.insight || 'N/A'}<br>`;
+                                        if (f.recommendedAction) findingsHtml += `<strong>Recommended Action:</strong> ${f.recommendedAction}<br>`;
+                                        findingsHtml += '</div>';
+                                    });
+                                }
+                                // Show the first 1-2 findings from each section, with details
+                                sectionCounts.forEach(s => {
+                                    if (Array.isArray(s.arr) && s.arr.length > 0) {
+                                        s.arr.slice(0,2).forEach((f, idx) => {
+                                            findingsHtml += `<div class="alert alert-high">`;
+                                            findingsHtml += `<h3 style="margin-top: 0;">${s.label} #${idx+1}</h3>`;
+                                            findingsHtml += `<strong>Finding:</strong> ${f.finding || 'N/A'}<br>`;
+                                            if (f.overview) findingsHtml += `<strong>Overview:</strong> ${f.overview}<br>`;
+                                            if (f.commercialImplication) findingsHtml += `<strong>Commercial Implication:</strong> ${f.commercialImplication}<br>`;
+                                            if (f.decisionImplication) findingsHtml += `<strong>Decision Implication:</strong> ${f.decisionImplication}<br>`;
+                                            findingsHtml += '</div>';
+                                        });
+                                    }
+                                });
+                                document.getElementById('critical-findings-section').innerHTML = findingsHtml;
             })
             .catch(err => {
                 document.getElementById('metadata-section').innerHTML = `<div style="color: var(--color-muted); margin-top: 10px;">Report data unavailable.</div>`;
