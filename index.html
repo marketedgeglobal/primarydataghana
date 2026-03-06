@@ -973,17 +973,18 @@
                 `;
             })
             .catch(err => {
+                // Hide error message and show soft fallback
                 document.getElementById('metadata-section').innerHTML = `
-                    <div class="alert alert-critical">Could not load analysis-results.json</div>
-                    <div style="color: var(--color-muted); margin-top: 10px;">Please check that the file exists and is accessible.</div>
+                    <div class="alert alert-critical" style="display:none;"></div>
+                    <div style="color: var(--color-muted); margin-top: 10px;">Report data unavailable.</div>
                 `;
                 document.getElementById('executive-summary-section').innerHTML = `
                     <h2>📊 Executive Summary</h2>
-                    <div class="alert alert-critical">No summary available.</div>
+                    <div style="color: var(--color-muted);">No summary available.</div>
                 `;
                 document.getElementById('critical-findings-section').innerHTML = `
                     <h2>⚠️ Critical Findings & Urgent Items</h2>
-                    <div class="alert alert-critical">No findings available.</div>
+                    <div style="color: var(--color-muted);">No findings available.</div>
                 `;
             });
         </script>
