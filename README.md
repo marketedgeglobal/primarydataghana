@@ -18,6 +18,9 @@ The Agent runs on a weekly schedule and:
 - Automatically commits the analysis results to analysis-results.md in the main branch
 
 Key Benefits
+## Live Site
+
+[View the live page here](https://marketedgeglobal.github.io/primarydataghana/)
 
 - Automated weekly review – No manual analysis needed
 - Prioritized insights – Urgent items are identified and flagged
